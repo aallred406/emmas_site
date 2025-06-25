@@ -1,1 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Italianno&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-aboreto: "Aboreto", system-ui, sans-serif;
+}
