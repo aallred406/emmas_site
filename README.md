@@ -8,6 +8,15 @@ A modern web application built with Vite, React, TypeScript, and TailwindCSS.
 - **React 19** - UI library with latest features
 - **TypeScript** - Type-safe JavaScript
 - **TailwindCSS v4** - Utility-first CSS framework
+- **React Router** - Client-side routing for navigation
+
+## ✨ Features
+
+- **Multi-page Navigation** - Home, About, and Gallery pages
+- **Responsive Design** - Mobile-first approach with TailwindCSS
+- **Modern UI Components** - Clean and professional design
+- **Interactive Elements** - Smooth transitions and hover effects
+- **Type Safety** - Full TypeScript implementation
 
 ## 🛠️ Getting Started
 
@@ -54,14 +63,20 @@ This project uses TailwindCSS v4 for styling. The main CSS file is located at `s
 
 ```
 emmas_site/
-├── public/           # Static assets
-├── src/             # Source code
-│   ├── assets/      # Images, fonts, etc.
-│   ├── App.tsx      # Main App component
-│   ├── index.css    # Global styles with TailwindCSS
-│   └── main.tsx     # Entry point
-├── index.html       # HTML template
-└── vite.config.ts   # Vite configuration
+├── public/              # Static assets
+├── src/                # Source code
+│   ├── components/     # Reusable components
+│   │   └── Navigation.tsx
+│   ├── pages/          # Page components
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   └── Gallery.tsx
+│   ├── assets/         # Images, fonts, etc.
+│   ├── App.tsx         # Main App with routing
+│   ├── index.css       # Global styles with TailwindCSS
+│   └── main.tsx        # Entry point
+├── index.html          # HTML template
+└── vite.config.ts      # Vite configuration
 ```
 
 ## 🚀 Deployment
