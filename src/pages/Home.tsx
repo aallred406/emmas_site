@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import heroImg from "../assets/kaylee.jpg";
 import { Card } from "../components/Card";
 import { TextLink } from "../components/TextLink";
