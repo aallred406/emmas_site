@@ -15,8 +15,8 @@ const Home = () => {
         <img src={heroImg} alt="Hero" className="mx-auto" />
       </div>
 
-      {/* Features Section */}
-      <div className=" bg-gray-100 py-10">
+      {/* Select Works Section */}
+      <div className=" bg-gray-300 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-3">
           <div className="flex justify-between items-end">
             <h2 className="font-bodoni text-4xl">Select Works</h2>
@@ -36,6 +36,17 @@ const Home = () => {
               title="Portraits"
             />
           </div>
+        </div>
+      </div>
+      {/* Services Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-3">
+        <div className="flex justify-between items-end">
+          <h2 className="font-bodoni text-4xl">Services</h2>
+          <TextLink to="/gallery" text="View Packages" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <Card imageSrc="https://picsum.photos/400/600?random=4" />
+          <Card imageSrc="https://picsum.photos/400/600?random=5" />
         </div>
       </div>
     </div>
