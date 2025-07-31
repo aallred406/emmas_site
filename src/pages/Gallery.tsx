@@ -21,10 +21,26 @@ const galleryImages = [
     width: 400,
     height: 500,
   },
+  {
+    id: 3,
+    src: "/images/wedding-2.jpg",
+    alt: "Emma Wedding",
+    category: "weddings",
+    width: 400,
+    height: 700,
+  },
+  {
+    id: 4,
+    src: "/images/wedding-3.jpg",
+    alt: "Emma Wedding",
+    category: "weddings",
+    width: 400,
+    height: 700,
+  },
   // Add more sample images for demonstration
   {
     id: 6,
-    src: "/images/emma.JPG",
+    src: "/images/wedding-1.jpg",
     alt: "Emma Wedding",
     category: "weddings",
     width: 400,
