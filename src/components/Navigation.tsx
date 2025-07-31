@@ -1,14 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { Logo } from "../assets/Logo";
 
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/gallery", label: "Works" },
+  { path: "/about", label: "About" },
+];
+
 const Navigation = () => {
   const location = useLocation();
-
-  const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/gallery", label: "Works" },
-    { path: "/about", label: "About" },
-  ];
 
   const focusStyles =
     "focus-visible:rounded-sm focus-visible:ring-1 focus-visible:ring-gray-600 focus-visible:ring-offset-1 focus:outline-0 focus-visible:bg-gray-100";

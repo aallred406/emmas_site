@@ -1,11 +1,11 @@
 import { InstaLogo } from "./InstaLogo";
 
+const navItems = [
+  { path: "/", label: "Home" },
+  { path: "/gallery", label: "Works" },
+  { path: "/about", label: "About" },
+];
 export const Footer = () => {
-  const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/gallery", label: "Works" },
-    { path: "/about", label: "About" },
-  ];
   const focusStyles =
     "focus-visible:rounded-sm focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-offset-1 focus:outline-0 focus-visible:bg-gray-100 focus-visible:text-gray-900";
   const hoverStyles = "hover:rounded-sm hover:bg-gray-100 hover:text-gray-900";
