@@ -1,4 +1,9 @@
-import heroImg from "../assets/kaylee.jpg";
+import heroImgXl from "../assets/kaylee.jpg";
+import heroImgLg from "../assets/kaylee-1024.jpeg";
+// import heroImgMd from "../assets/kaylee-760.jpeg";
+import heroImgMd from "../assets/emma.jpg";
+// import heroImgSm from "../assets/kaylee-450.jpeg";
+import heroImgSm from "../assets/logo.png";
 import { Card } from "../components/Card";
 import { TextLink } from "../components/TextLink";
 
@@ -12,7 +17,15 @@ const Home = () => {
         </h1>
       </div>
       <div>
-        <img src={heroImg} alt="Hero" className="mx-auto" />
+        {/* TODO: figure out responsive images */}
+        <img
+          // src={heroImgLg}
+          srcSet={`${heroImgSm} 450w, ${heroImgMd} 760w, ${heroImgLg} 1024w, ${heroImgXl} 1280w`}
+          sizes="(width <= 450px) 450px, (width <= 760px) 760px, (width <= 1024px) 1024px"
+          alt="Hero"
+          loading="lazy"
+          className="mx-auto"
+        />
       </div>
 
       {/* Select Works Section */}

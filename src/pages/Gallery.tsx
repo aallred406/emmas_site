@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// use https://www.npmjs.com/package/react-lazy-load-image-component for lazy load gallery images
+
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 

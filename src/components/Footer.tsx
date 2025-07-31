@@ -10,9 +10,9 @@ export const Footer = () => {
     "focus-visible:rounded-sm focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-offset-1 focus:outline-0 focus-visible:bg-gray-100 focus-visible:text-gray-900";
   const hoverStyles = "hover:rounded-sm hover:bg-gray-100 hover:text-gray-900";
   return (
-    <footer className="py-4 bg-gray-400">
-      <div className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="flex items-center text-center text-white text-sm">
+    <footer className="py-8 bg-gray-400 flex flex-col items-center gap-8">
+      <div className="flex justify-between items-center max-w-7xl w-full">
+        <p className="flex items-center text-white text-sm">
           &copy; {new Date().getFullYear()} Emma Larhea Photography. All rights
           reserved.
           <a
@@ -25,8 +25,8 @@ export const Footer = () => {
             <InstaLogo />
           </a>
         </p>
-        <nav aria-label="Footer Navigation" className="mt-2">
-          <ul className="flex justify-center space-x-4">
+        <nav aria-label="Footer Navigation">
+          <ul className="flex justify-center items-center space-x-4">
             <li>
               {navItems.map((item, i) => (
                 <a
@@ -40,6 +40,11 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
+      </div>
+      <div className="max-w-7xl width-full flex items-center">
+        <p className="text-3xl md:text-7xl mb-0 text-white font-aboreto text-center">
+          Emma LaRhea Photography
+        </p>
       </div>
     </footer>
   );

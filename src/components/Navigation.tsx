@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Logo } from "./Logo";
+import { Logo } from "../assets/Logo";
 
 const Navigation = () => {
   const location = useLocation();
