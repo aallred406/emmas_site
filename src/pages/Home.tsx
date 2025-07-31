@@ -1,7 +1,7 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import heroImgXl from "../assets/kaylee.jpg";
 import { Card } from "../components/Card";
 import { TextLink } from "../components/TextLink";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
   return (
