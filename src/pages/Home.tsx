@@ -1,11 +1,7 @@
 import heroImgXl from "../assets/kaylee.jpg";
-import heroImgLg from "../assets/kaylee-1024.jpeg";
-// import heroImgMd from "../assets/kaylee-760.jpeg";
-import heroImgMd from "../assets/emma.jpg";
-// import heroImgSm from "../assets/kaylee-450.jpeg";
-import heroImgSm from "../assets/logo.png";
 import { Card } from "../components/Card";
 import { TextLink } from "../components/TextLink";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
   return (
@@ -17,14 +13,12 @@ const Home = () => {
         </h1>
       </div>
       <div>
-        {/* TODO: figure out responsive images */}
-        <img
-          // src={heroImgLg}
-          srcSet={`${heroImgSm} 450w, ${heroImgMd} 760w, ${heroImgLg} 1024w, ${heroImgXl} 1280w`}
-          sizes="(width <= 450px) 450px, (width <= 760px) 760px, (width <= 1024px) 1024px"
-          alt="Hero"
-          loading="lazy"
-          className="mx-auto"
+        <LazyLoadImage
+          src={heroImgXl}
+          alt=""
+          effect="blur"
+          className="w-full h-auto object-cover"
+          placeholderSrc="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f3f4f6' width='400' height='300'/%3E%3C/svg%3E"
         />
       </div>
 

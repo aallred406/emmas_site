@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 type CardProps = {
   imageSrc?: string;
   title?: string;
@@ -7,10 +9,10 @@ export const Card = ({ imageSrc, title }: CardProps) => {
   return (
     <div>
       {imageSrc && (
-        <img
+        <LazyLoadImage
           src={imageSrc}
-          loading="lazy"
           alt={title}
+          effect="blur"
           className="w-full h-auto"
         />
       )}
