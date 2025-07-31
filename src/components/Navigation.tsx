@@ -6,8 +6,8 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
     { path: "/gallery", label: "Works" },
+    { path: "/about", label: "About" },
   ];
 
   const focusStyles =

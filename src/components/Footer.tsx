@@ -3,8 +3,8 @@ import { InstaLogo } from "./InstaLogo";
 export const Footer = () => {
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
     { path: "/gallery", label: "Works" },
+    { path: "/about", label: "About" },
   ];
   const focusStyles =
     "focus-visible:rounded-sm focus-visible:ring-1 focus-visible:ring-white focus-visible:ring-offset-1 focus:outline-0 focus-visible:bg-gray-100 focus-visible:text-gray-900";
